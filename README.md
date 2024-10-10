@@ -1,9 +1,18 @@
-# Data Visualization Project
+# NFL Passing Statistics Data Visualization Project
 
 ## Data
-
-The data I propose to visualize for my project is ...
-
+The dataset(s) that I propose to use for my project are the NFL passing statistics data from [Pro Football Reference](https://www.pro-football-reference.com/), particularly the statistics from the past 10 seasons (2014 to 2023). They are linked as follows
+* https://www.pro-football-reference.com/years/2023/passing.htm
+* https://www.pro-football-reference.com/years/2022/passing.htm
+* https://www.pro-football-reference.com/years/2021/passing.htm
+* https://www.pro-football-reference.com/years/2020/passing.htm
+* https://www.pro-football-reference.com/years/2019/passing.htm
+* https://www.pro-football-reference.com/years/2018/passing.htm
+* https://www.pro-football-reference.com/years/2017/passing.htm
+* https://www.pro-football-reference.com/years/2016/passing.htm
+* https://www.pro-football-reference.com/years/2015/passing.htm
+* https://www.pro-football-reference.com/years/2014/passing.htm
+An important thing to note is that the implementation will only consider players who play the quarterback position. In certain situations, players who do not play quarterback attempt passing plays are credited with passing statistics. These players will be filtered out in the visualization.
 
 ## Questions & Tasks
 
