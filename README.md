@@ -25,34 +25,20 @@ The main idea behind this visualization is a scatter plot with two axes. These a
 * What statistics do not affect a player's award chances (i.e. there is a low correlation)
 
 ## Sketches
+Below is a sketch of what the visualization should look like when finished.
 
-(insert one or more hand-drawn sketches of interactive visualizations that you imagine)
-(describe each sketch - how is the data visualized, what are the interactions, and how do these relate to the questions/tasks)
+![sketch](https://github.com/user-attachments/assets/c8cae5da-71ea-411b-aad0-c27bc6f5f8eb)
 
+As you can see there are two areas in which the user can interact with the visualization. The user can select the statistic encoded on the x and y axes. The user can also click the data point and display the relevant information about the player and their statistic during the particular season. Furthermore, the visualization shows how the player awards are encoded via color and shape. 
 
 ## Prototypes
 
-I’ve created a proof of concept visualization of this data. It's a ... and it shows ...
-
-[![image](https://user-images.githubusercontent.com/68416/65240758-9ef6c980-daff-11e9-9ffa-e35fc62683d2.png)](https://vizhub.com/curran/eab039ad1765433cb51aad167d9deae4)
-
-(please put a screenshot of one or more visualizations of this dataset you already made, for previous assignments, and link to them)
-
-You can put images into here by pasting them into issues.
-
-You can make images into links like this:
-
-```
-[![image](https://user-images.githubusercontent.com/68416/65240758-9ef6c980-daff-11e9-9ffa-e35fc62683d2.png)](https://vizhub.com/curran/eab039ad1765433cb51aad167d9deae4)
-```
-
-
-Also, you can study the [source](https://raw.githubusercontent.com/curran/dataviz-project-template-proposal/master/README.md) to figure out Markdown formatting. You can use the GitHub built-in editor to edit the document.
-
 ## Open Questions
-
-(describe any fear, uncertainty, or doubt you’re having about the feasibility of implementing the sketched system. For example, “I’m not sure where to get the geographic shapes to build a map from this data” or “I don’t know how to resolve the codes to meaningful names” … Feel free to delete this section if you’re confident.)
+The only thing that I am slightly concerned about feasibility-wise is the dynamic axes, however, this should be possible. 
 
 ## Milestones
-
-(for each week, estimate what would be accomplised)
+Week 8: Data fully cleaned and imported. Axes set up.
+Week 9: Have two static statistics showing up on the axes with the awards encoded.
+Week 10 and Week 11: Implement the dynamic axes
+Week 12: Implement clicking on data points
+Week 13 and Week 14: Finishing touches.
