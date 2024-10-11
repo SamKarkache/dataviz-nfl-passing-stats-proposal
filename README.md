@@ -32,6 +32,13 @@ Below is a sketch of what the visualization should look like when finished.
 As you can see there are two areas in which the user can interact with the visualization. The user can select the statistic encoded on the x and y axes. The user can also click the data point and display the relevant information about the player and their statistic during the particular season. Furthermore, the visualization shows how the player awards are encoded via color and shape. 
 
 ## Prototypes
+Below is a very simple proof-of-concept visualization that I created and represents my work so far.
+
+![image](https://github.com/user-attachments/assets/6f7001cf-53aa-42a3-9934-246472e9b36c)
+
+This visualization uses passing data from 2023 and plots players in terms of touchdowns on the x-axis and quarterback rating on the y-axis. The data points are players at the quarterback position who started more than one game. We then use color to encode the award that the player won. As shown in the prototype, we can derive a correlation between these statistics and winning an award as all the award winners had high values of each statistic. This is the general idea behind what I want to do with the visualization and the full visualization can be built off of this prototype. 
+
+[VizHub Link](https://vizhub.com/SamKarkache/nfl-passing-course-project)
 
 ## Open Questions
 The only thing that I am slightly concerned about feasibility-wise is the dynamic axes, however, this should be possible. 
