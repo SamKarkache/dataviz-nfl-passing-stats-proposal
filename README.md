@@ -44,8 +44,8 @@ This visualization uses passing data from 2023 and plots players in terms of tou
 The only thing that I am slightly concerned about feasibility-wise is the dynamic axes, however, this should be possible. 
 
 ## Milestones
-Week 8: Data fully cleaned and imported. Axes set up.
-Week 9: Have two static statistics showing up on the axes with the awards encoded.
-Week 10 and Week 11: Implement the dynamic axes
-Week 12: Implement clicking on data points
-Week 13 and Week 14: Finishing touches.
+* Week 8: Data fully cleaned and imported. Axes set up.
+* Week 9: Have two static statistics showing up on the axes with the awards encoded.
+* Week 10 and Week 11: Implement the dynamic axes
+* Week 12: Implement clicking on data points
+* Week 13 and Week 14: Finishing touches.
