@@ -12,16 +12,17 @@ The dataset(s) that I propose to use for my project are the NFL passing statisti
 * https://www.pro-football-reference.com/years/2016/passing.htm
 * https://www.pro-football-reference.com/years/2015/passing.htm
 * https://www.pro-football-reference.com/years/2014/passing.htm
-An important thing to note is that the implementation will only consider players who play the quarterback position. In certain situations, players who do not play quarterback attempt passing plays are credited with passing statistics. These players will be filtered out in the visualization.
+
+Since the datasets are on a per-season basis, the same player may be listed multiple times. To distinguish players, an attribute named 'year' will need to be added when merging the three datasets. In doing so, the same player's statistics in different seasons can be distinguished. Further data preprocessing will need to be done on the awards column as well to properly encode it. An important thing to note is that the implementation will only consider players who play the quarterback position. Players who do not play quarterback attempt passing plays are credited with passing statistics in certain situations. These players will be filtered out in the visualization.
 
 ## Questions & Tasks
 
-The following tasks and questions will drive the visualization and interaction decisions for this project:
+The main idea behind this visualization is a scatter plot with two axes. These axes are configurable and can correspond to a passing statistic in the dataset. The points on the scatter plot will represent a specific player and will encode the awards that they won for that season. With this concept in mind, the following tasks and questions will drive the visualization and interaction decisions for this project:
 
- * (insert your question or task here) How does the X vary over time?
- * (insert your question or task here) Is there any correlation between X and Y?
- * (insert your question or task here) Are there interesting spatial patterns in X?
- * (insert your question or task here) How many X are there across different Y?
+* What statistic(s) are most strongly correlated to winning an award
+* What player(s) are outliers with respect to winning a postseason award (i.e. were there players who _should_ have won an award or _should not_ have?)
+* Is there any significant difference with respect to winning an award in different seasons (i.e. Was it easier or harder to win an award in, for example, 2014 vs. 2023?).
+* What statistics do not affect a player's award chances (i.e. there is a low correlation)
 
 ## Sketches
 
