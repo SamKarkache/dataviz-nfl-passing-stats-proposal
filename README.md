@@ -38,6 +38,8 @@ Below is a very simple proof-of-concept visualization that I created and represe
 
 This visualization uses passing data from 2023 and plots players in terms of touchdowns on the x-axis and quarterback rating on the y-axis. The data points are players at the quarterback position who started more than one game. We then use color to encode the award that the player won. As shown in the prototype, we can derive a correlation between these statistics and winning an award as all the award winners had high values of each statistic. This is the general idea behind what I want to do with the visualization and the full visualization can be built off of this prototype. 
 
+REVISION 10/23/2024: I want to also give the ability to filter the data by year.
+
 [VizHub Link](https://vizhub.com/SamKarkache/nfl-passing-course-project)
 
 ## Open Questions
