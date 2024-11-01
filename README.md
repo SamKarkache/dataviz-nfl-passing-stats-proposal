@@ -40,9 +40,8 @@ This visualization uses passing data from 2023 and plots players in terms of tou
 
 ## Work so Far
 Below are links to VizHub that show the projects progression 
-10/24/2024: [VizHub Link]([https://vizhub.com/SamKarkache/nfl-passing-course-project])
-10/31/2024: [VizHub Link]([https://vizhub.com/SamKarkache/nfl-passing-yards-visualization-10-31-2024])
-
+* 10/24/2024: https://vizhub.com/SamKarkache/nfl-passing-course-project
+* 10/31/2024: https://vizhub.com/SamKarkache/nfl-passing-yards-visualization-10-31-2024
 
 ## Milestones
 * Week 8: Data fully cleaned and imported. Axes set up.
