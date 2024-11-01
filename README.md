@@ -1,5 +1,10 @@
 # NFL Passing Statistics Data Visualization Project
 
+## Work so Far
+Below are links to VizHub that show the projects progression 
+* 10/24/2024: https://vizhub.com/SamKarkache/nfl-passing-course-project
+* 10/31/2024: https://vizhub.com/SamKarkache/nfl-passing-yards-visualization-10-31-2024
+
 ## Data
 The dataset(s) that I propose to use for my project are the NFL passing statistics data from [Pro Football Reference](https://www.pro-football-reference.com/), particularly the statistics from the past 10 seasons (2014 to 2023). They are linked as follows
 * https://www.pro-football-reference.com/years/2023/passing.htm
@@ -37,11 +42,6 @@ Below is a very simple proof-of-concept visualization that I created and represe
 ![image](https://github.com/user-attachments/assets/6f7001cf-53aa-42a3-9934-246472e9b36c)
 
 This visualization uses passing data from 2023 and plots players in terms of touchdowns on the x-axis and quarterback rating on the y-axis. The data points are players at the quarterback position who started more than one game. We then use color to encode the award that the player won. As shown in the prototype, we can derive a correlation between these statistics and winning an award as all the award winners had high values of each statistic. This is the general idea behind what I want to do with the visualization and the full visualization can be built off of this prototype. 
-
-## Work so Far
-Below are links to VizHub that show the projects progression 
-* 10/24/2024: https://vizhub.com/SamKarkache/nfl-passing-course-project
-* 10/31/2024: https://vizhub.com/SamKarkache/nfl-passing-yards-visualization-10-31-2024
 
 ## Milestones
 * Week 8: Data fully cleaned and imported. Axes set up.
