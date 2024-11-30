@@ -26,8 +26,8 @@ The main idea behind this visualization is a scatter plot with two axes. These a
 
 * What statistic(s) are most strongly correlated to winning an award
 * What player(s) are outliers concerning winning a postseason award (i.e. were there players who _should_ have won an award or _should not_ have?)
-* Is there any significant difference concerning winning an award in different seasons (i.e. Was it easier or harder to win an award in, for example, 2013 vs. 2023?)?
 * What statistics do not affect a player's award chances (i.e. there is a low correlation)
+* Is there any significant difference concerning winning an award in different seasons (i.e. Was it easier or harder to win an award in, for example, 2013 vs. 2023?)?
 
 ## Sketches
 Below is an initial sketch that I made early on in the development process that outlines how the visualization will look like and what kind of interactions it will have. 
@@ -64,13 +64,29 @@ This revision increases the visual appeal of the project. The dropdown menus wer
 ![image](https://github.com/user-attachments/assets/a8f5179b-1d43-4b76-b9f5-323eef2356bf)
 
 ### 11/29/2024 Revision (Latest)
-
+This revision added some slight visual enhancements with spacing and positioning. The primary thing that was implemented was the addition of a help button that explains some of the visualization's features. <br>
+![image](https://github.com/user-attachments/assets/9f4fd63d-e657-457f-985c-710272890223) <br>
+The question mark button will toggle the tool tip that explains how the filters and interactions on the data visualization work. 
 
 ## Example Tasks Using Full Implementation
-* What statistic(s) are most strongly correlated to winning an award
-* What player(s) are outliers concerning winning a postseason award (i.e. were there players who _should_ have won an award or _should not_ have?)
-* Is there any significant difference concerning winning an award in different seasons (i.e. Was it easier or harder to win an award in, for example, 2013 vs. 2023?)?
-* What statistics do not affect a player's award chances (i.e. there is a low correlation)
+### What statistic(s) are most strongly correlated to winning an award
+Looking through many of the statistics we can see that high values for passing yards and touchdowns correlate to receiving an award. 
+![image](https://github.com/user-attachments/assets/5957e9c1-5a65-456c-bd5f-2c912e8b98d9) <br>
+There are large clusters of red "No Award" Datapoints in the bottom left of the scatter plot with all the award winners being concentrated to the upper left. 
+
+## What player(s) are outliers concerning winning a postseason award (i.e. were there players who _should_ have won an award or _should not_ have?) <br>
+The image below shows an outlier that I identified with respect to winning an award. As established above, the yards and touchdown statistics had a high positive correlation with respect to winning an award. Using the dynamic legend we can see a clear outlier for the Pro Bowl award. In 2022 a player named "Tyler Huntley" seems to have made the Pro Bowl despite underwhelming passing yard and touchdown statistics. <br>
+![image](https://github.com/user-attachments/assets/4b3e1ac0-e98a-4ee3-882c-0843ec2610b1)
+
+## What statistics do not affect a player's award chances (i.e. there is a low correlation)
+Below are two less correlated statistics with respect to getting an award. Firstly, across the x-axis, the number of sacks taken by the quarterback a relatively distributed for award winners. the same can be said for the player's age. This tells us that these statistics are not good predictors of a player's award chances. <br>
+![image](https://github.com/user-attachments/assets/4b343ae7-3a1e-4889-83da-153f00229bd6)
+
+## Is there any significant difference concerning winning an award in different seasons (i.e. Was it easier or harder to win an award in, for example, 2013 vs. 2023?)?
+Below are two scatter plots for Yds versus TDs in the 2020 season and the 2021 season. 
+![image](https://github.com/user-attachments/assets/cce2a2ad-9a7b-48d5-a56e-a6dd24ff241f) <br>
+![image](https://github.com/user-attachments/assets/506cf2da-3048-43ab-83f4-b722540f37b5) <br>
+It is clear that it was a bit easier to win an award in 2021 as more players did so with fewer yards when compared to the 2020 season. 
 
 ## Conclusion and Future Work
-This concept can be easily extrapolated to include different types of NFL statistics. For example, Running Back's rushing statistics could be a new view for this visualization. Furthermore, additional years can be added as well, pro football reference has statistics going back to the 1920 NFL season. Different types of visualizations could be added too. For example, a box plot can be implemented to view a particular player's (or group of players) statistics over many different seasons. Finally, a cool idea could be to implement some sort of proprietary querying language that would allow for quick access to relevant statistics (i.e. something like "PLAYERS WHERE YDS > 3000 AND TD < 40). Overall, the project was a very good tool to help me learn all about the principles of data visualization. The final revision of the project can be accessed at the following VizHub link.
+This concept can be easily extrapolated to include different types of NFL statistics. For example, Running Back's rushing statistics could be a new view for this visualization. Furthermore, additional years can be added as well, pro football reference has statistics going back to the 1920 NFL season. Different types of visualizations could be added too. For example, a box plot can be implemented to view a particular player's (or group of players) statistics over many different seasons. I did not end up implementing the shape encoding for the awards shown in the sketch. It ended up not looking visually appealing. Future work could find a way to implement the shape encoding while maintaining the visual appeal. Finally, a cool idea could be to implement some sort of proprietary querying language that would allow for quick access to relevant statistics (i.e. something like "PLAYERS WHERE YDS > 3000 AND TD < 40). Overall, the project was a very good tool to help me learn all about the principles of data visualization. The final revision of the project can be accessed at the following VizHub link.
