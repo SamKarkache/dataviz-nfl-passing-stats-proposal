@@ -64,7 +64,7 @@ If the dynamic legend selects a certain award type, then data points of the othe
 This revision increases the visual appeal of the project. The dropdown menus were styled, the canvas size was increased, and a new dynamic scatter plot title was implemented. Furthermore, the location of the award and year dropdown menus were moved to the bottom of the canvas. Some visual bugs were also fixed by improving the state logic. A new feature that was implemented was the player name search text box. A user can now search for players by name by typing it in the textbox. If a search results in no matching entries (i.e. the player name does not exist or is already filtered out), the user will be alerted. A reset filter button is also present to set the filters back to their default values. <br>
 ![image](https://github.com/user-attachments/assets/a8f5179b-1d43-4b76-b9f5-323eef2356bf)
 
-### 11/29/2024 Revision (Latest)
+### 11/29/2024 Revision (Latest) https://vizhub.com/SamKarkache/nfl-passing-yards-visualization-11292024-revision
 This revision added some slight visual enhancements with spacing and positioning. The primary thing that was implemented was the addition of a help button that explains some of the visualization's features. <br>
 ![image](https://github.com/user-attachments/assets/9f4fd63d-e657-457f-985c-710272890223) <br>
 The question mark button will toggle the tool tip that explains how the filters and interactions on the data visualization work. 
