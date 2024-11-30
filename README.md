@@ -6,7 +6,7 @@ November 29th, 2024
 This project involves making an interactive scatter plot that visualizes different passing statistics recorded by quarterbacks in the NFL concerning the award(s) won by that player. The goal was to make a visualization that would let the users uncover interesting features about the data that may not be immediately apparent when looking at the raw data. Robust filters will also allow for enhanced analysis of the different passing statistics.
 
 ## Data
-The dataset(s) that I utilized for this visualization is the NFL passing statistics data from [Pro Football Reference](https://www.pro-football-reference.com/), particularly the statistics from the past 10 seasons (2013 to 2023). They are linked as follows
+The dataset(s) that I utilized for this visualization is the NFL passing statistics data from [Pro Football Reference](https://www.pro-football-reference.com/), particularly the statistics from the past 11 seasons (2013 to 2023). They are linked as follows
 * https://www.pro-football-reference.com/years/2023/passing.htm
 * https://www.pro-football-reference.com/years/2022/passing.htm
 * https://www.pro-football-reference.com/years/2021/passing.htm
