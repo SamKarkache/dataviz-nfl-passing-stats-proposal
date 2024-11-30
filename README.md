@@ -17,6 +17,7 @@ The dataset(s) that I utilized for this visualization is the NFL passing statist
 * https://www.pro-football-reference.com/years/2016/passing.htm
 * https://www.pro-football-reference.com/years/2015/passing.htm
 * https://www.pro-football-reference.com/years/2014/passing.htm
+* https://www.pro-football-reference.com/years/2013/passing.htm
 
 Since the datasets are on a per-season basis, the same player may be listed multiple times. To distinguish players, an attribute named 'year' was added when merging the three datasets. In doing so, the same player's statistics in different seasons can be distinguished. Further data preprocessing was implemented to encode the awards won by each player into one of "No Award", "Pro Bowl", "All-Pro", or "MVP". An important thing to note is that the implementation only considers players who play the quarterback position and started at least one game during a given season. Players who do not play quarterback attempt passing plays are credited with passing statistics in certain situations. These players will be filtered out in the visualization.
 
