@@ -1,7 +1,7 @@
 # NFL Passing Statistics Data Visualization Project Report
 Samuel Karkache <br>
 CS 573: Data Visualization <br>
-November 29th, 2024
+December 3rd, 2024
 ## Introduction
 This project involves making an interactive scatter plot that visualizes different passing statistics recorded by quarterbacks in the NFL concerning the award(s) won by that player. The goal was to make a visualization that would let the users uncover interesting features about the data that may not be immediately apparent when looking at the raw data. Robust filters will also allow for enhanced analysis of the different passing statistics.
 
@@ -37,7 +37,7 @@ As you can see there are two areas in which the user can interact with the visua
 
 ## Prototyping and Implementation Timeline
 ### Initial Prototype
-Below is a very simple proof-of-concept visualization that simply implements the sketch done above. Interactions have not been developed in the initial prototype but the idea was to transfer the concept from a sketch into D3. <br>
+Below is a very simple proof-of-concept visualization that implements the above sketch. Interactions have not been developed in the initial prototype but the idea was to transfer the concept from a sketch into D3. <br>
 ![image](https://github.com/user-attachments/assets/6f7001cf-53aa-42a3-9934-246472e9b36c) <br>
 This visualization uses passing data from 2023 and plots players in terms of touchdowns on the x-axis and quarterback rating on the y-axis. The data points are players at the quarterback position who started more than one game. We then use color to encode the award that the player won. As shown in the prototype, we can derive a correlation between these statistics and winning an award as all the award winners had high values of each statistic.
 
@@ -64,30 +64,32 @@ If the dynamic legend selects a certain award type, then data points of the othe
 This revision increases the visual appeal of the project. The dropdown menus were styled, the canvas size was increased, and a new dynamic scatter plot title was implemented. Furthermore, the location of the award and year dropdown menus were moved to the bottom of the canvas. Some visual bugs were also fixed by improving the state logic. A new feature that was implemented was the player name search text box. A user can now search for players by name by typing it in the textbox. If a search results in no matching entries (i.e. the player name does not exist or is already filtered out), the user will be alerted. A reset filter button is also present to set the filters back to their default values. <br>
 ![image](https://github.com/user-attachments/assets/a8f5179b-1d43-4b76-b9f5-323eef2356bf)
 
-### 11/29/2024 Revision (Latest) https://vizhub.com/SamKarkache/nfl-passing-yards-visualization-11292024-revision
+### 11/29/2024 Revision https://vizhub.com/SamKarkache/nfl-passing-yards-visualization-11292024-revision
 This revision added some slight visual enhancements with spacing and positioning. The primary thing that was implemented was the addition of a help button that explains some of the visualization's features. <br>
 ![image](https://github.com/user-attachments/assets/9f4fd63d-e657-457f-985c-710272890223) <br>
 The question mark button will toggle the tool tip that explains how the filters and interactions on the data visualization work. 
 
+### Final Revision https://vizhub.com/SamKarkache/nfl-passing-yards-visualization-final-revision
+For the final revision, a few visual enhancements were added. The current value of the year filter is now displayed on the scatter plot title. Also, hovering over a data point will now make the circle radius increase and give the data point a black border so it is clear what data point is being selected. This is particularly helpful when there are a large number of highly concentrated data points. <br> <br>
+![image](https://github.com/user-attachments/assets/ed9970b5-44c0-4ae6-8820-fa22dcf12515) <br>
+
 ## Example Tasks Using Full Implementation
 ### What statistic(s) are most strongly correlated to winning an award
-Looking through many of the statistics we can see that high values for passing yards and touchdowns correlate to receiving an award. 
-![image](https://github.com/user-attachments/assets/5957e9c1-5a65-456c-bd5f-2c912e8b98d9) <br>
-There are large clusters of red "No Award" Datapoints in the bottom left of the scatter plot with all the award winners being concentrated to the upper left. 
+Looking through many of the statistics we can see that high values for passing yards and touchdowns correlate to receiving an award. There are large clusters of red "No Award" Datapoints in the bottom left of the scatter plot with all the award winners being concentrated to the upper left. <br> <br>
+![image](https://github.com/user-attachments/assets/bf304334-62ab-410b-8f04-6a112ce1662b) <br>
 
 ## What player(s) are outliers concerning winning a postseason award (i.e. were there players who _should_ have won an award or _should not_ have?) <br>
-The image below shows an outlier that I identified with respect to winning an award. As established above, the yards and touchdown statistics had a high positive correlation with respect to winning an award. Using the dynamic legend we can see a clear outlier for the Pro Bowl award. In 2022 a player named "Tyler Huntley" seems to have made the Pro Bowl despite underwhelming passing yard and touchdown statistics. <br>
-![image](https://github.com/user-attachments/assets/4b3e1ac0-e98a-4ee3-882c-0843ec2610b1)
+The image below shows an outlier that I identified with respect to winning an award. As established above, the yards and touchdown statistics had a high positive correlation with respect to winning an award. Using the dynamic legend we can see a clear outlier for the Pro Bowl award. In 2022 a player named "Tyler Huntley" seems to have made the Pro Bowl despite underwhelming passing yard and touchdown statistics. <br> <br>
+![image](https://github.com/user-attachments/assets/12736474-e491-4e27-9645-a4619d2718d2) <br>
 
 ## What statistics do not affect a player's award chances (i.e. there is a low correlation)
-Below are two less correlated statistics with respect to getting an award. Firstly, across the x-axis, the number of sacks taken by the quarterback a relatively distributed for award winners. the same can be said for the player's age. This tells us that these statistics are not good predictors of a player's award chances. <br>
-![image](https://github.com/user-attachments/assets/4b343ae7-3a1e-4889-83da-153f00229bd6)
+Below are two less correlated statistics with respect to getting an award. Firstly, across the x-axis, the number of sacks taken by the quarterback a relatively distributed for award winners. the same can be said for the player's age. This tells us that these statistics are not good predictors of a player's award chances. <br> <br>
+![image](https://github.com/user-attachments/assets/251df4e9-708c-4176-a1eb-e76c24453fde) <br>
 
 ## Is there any significant difference concerning winning an award in different seasons (i.e. Was it easier or harder to win an award in, for example, 2013 vs. 2023?)?
-Below are two scatter plots for Yds versus TDs in the 2020 season and the 2021 season. 
-![image](https://github.com/user-attachments/assets/cce2a2ad-9a7b-48d5-a56e-a6dd24ff241f) <br>
-![image](https://github.com/user-attachments/assets/506cf2da-3048-43ab-83f4-b722540f37b5) <br>
-It is clear that it was a bit easier to win an award in 2021 as more players did so with fewer yards when compared to the 2020 season. 
+Below are two scatter plots for Yds versus TDs in the 2020 season and the 2021 season. It was a bit easier to win an award in 2021 as more players did so with fewer yards when compared to the 2020 season. 
+![image](https://github.com/user-attachments/assets/631379f3-8abb-4a50-a8e9-8b9a01d9a3c8) <br> 
+![image](https://github.com/user-attachments/assets/2f25d37c-f02b-4ddc-b769-48242fdcc648) <br>
 
 ## Conclusion and Future Work
 This concept can be easily extrapolated to include different types of NFL statistics. For example, Running Back's rushing statistics could be a new view for this visualization. Furthermore, additional years can be added as well, pro football reference has statistics going back to the 1920 NFL season. Different types of visualizations could be added too. For example, a box plot can be implemented to view a particular player's (or group of players) statistics over many different seasons. I did not end up implementing the shape encoding for the awards shown in the sketch. It ended up not looking visually appealing. Future work could find a way to implement the shape encoding while maintaining the visual appeal. Finally, a cool idea could be to implement some sort of proprietary querying language that would allow for quick access to relevant statistics (i.e. something like "PLAYERS WHERE YDS > 3000 AND TD < 40). Overall, the project was a very good tool to help me learn all about the principles of data visualization. The final revision of the project can be accessed at the following VizHub link.
